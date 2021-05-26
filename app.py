@@ -61,8 +61,3 @@ if __name__=='__main__':
     
 
 
-y_pred=model.predict(sc.transform([[15,20,0.08,0.010006,0.17,0.0567]])) #predicting model for dynamic data
-print(y_pred)
-
-y_pred=model.predict(sc.transform([[20.57,17.770,0.08474,0.078640,0.1812,0.056670]])) #predicting model for dynamic data
-print(y_pred)
