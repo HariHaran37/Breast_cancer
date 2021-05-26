@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Breast Cancer Prediction Using Machine Learning</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+</head>
+<style>
+ 
+.div-center {
+  width: 500px;
+  height: 1000px;
+  background-color:#5e6eb9;
+  position:all;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  padding: 1em 2em;
+  border-bottom: 2px solid #ccc;
+  display: table;
+  margin-top: 1cm;
+  
+}
+.back {
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+
+
+div.content {
+  display: table-cell;
+  vertical-align: middle;
+}
+</style>
+<body> 
+ 
+<div class="container-fluid" style="background-color: #9ab0ec" >
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Breast Cancer Prediction</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="index">Home</a></li>
+        <li class="active"><a href="prediction">Prediction</a></li>
+        <li><a href="about">About</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="jumbotron text-center"  style="background-color: #5b81e971;margin:auto" >
+    <h1 >Breast Cancer Prediction</h1>      
+          <p>Prediction over<b> 98%</b> accuracy.</p>
+    
+
+          <div class="back">
+            <div class="div-center">
+              <div class="content">
+                <h3>Nucleus features</h3>
+                    <hr />
+                    <form action="{{url_for('home')}}" method="POST">
+                            <div class="form-group">
+                              <label for="radius_mean">Radius Mean</label>
+                              <input type="text" class="form-control" id="radius_mean" name="radius_mean" placeholder="radius_mean : 8-26" required="required">
+                            </div>
+            
+                            <div class="form-group">
+                              <label for="texture_mean">Texture Mean</label>
+                              <input type="text" class="form-control" id="texture_mean" name="texture_mean" placeholder="texture_mean : 9-30" required="required">
+                            </div>
+        
+                            <div class="form-group">
+                              <label for="smoothness_mean">Smoothness Mean</label>
+                              <input type="text" class="form-control" id="smoothness_mean" name="smoothness_mean" placeholder="smoothness_mean : 0.06-0.14" required="required">
+                            </div>
+        
+                            <div class="form-group">
+                              <label for="compactness_mean">Compactness Mean</label>
+                              <input type="text" class="form-control" id="compactness_mean" name="compactness_mean" placeholder="compactness_mean : 0.019-0.26" required="required">
+                            </div>
+        
+        
+                            <div class="form-group">
+                              <label for="symmetry_mean">Symmetry Mean</label>
+                              <input type="text" class="form-control" id="symmetry_mean" name="symmetry_mean" placeholder="symmetry_mean : 0.12-0.26" required="required">
+                            </div>
+        
+        
+                            <div class="form-group">
+                              <label for="fractal_dimension_mean">Fractal dimension Mean</label>
+                              <input type="text" class="form-control" id="fractal_dimension_mean" name="fractal_dimension_mean" placeholder="fractal_dimension_mean : 0.04-0.09" required="required">
+                            </div>
+                         
+                      
+                           <button type="submit" class="btn btn-primary">Predict</button>
+                            <!--<a href='result' type="button" class="btn btn-primary">Submit</a>-->
+                            <hr />
+                            <!--<div class="col-md-12 text-center">
+                            {% if data == 0 %}
+                            <p>It is not affected {{data}}</p>
+                            {%elif data == 1 %}
+                            <p>It is affected {{data}}</p>
+                            %else%}
+                            <p></p>
+                            {%endif%}
+                          </div>-->
+                          </form>
+                  </div>
+                  
+              </div>
+            </div>
+      
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Breast Cancer Prediction Using Machine Learning</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+
+<style>
+ 
+    .div-center {
+      width: 500px;
+      height: 1000px;
+      background-color:#5e6eb9;
+      position:all;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      max-width: 100%;
+      max-height: 100%;
+      overflow: hidden;
+      padding: 1em 2em;
+      border-bottom: 2px solid #ccc;
+      display: table;
+      margin-top: 1cm;
+      
+    }
+    .back {
+      width: 100%;
+      top: 0;
+      bottom: 0;
+    }
+    
+    
+    div.content {
+      display: table-cell;
+      vertical-align: middle;
+    }
+    </style>
+
+
+<body>
+        <div class="container-fluid" style="background-color: #9ab0ec;position: all; height: 1200px;position=all;" >
+          <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">Breast Cancer Prediction</a>
+              </div>
+              <ul class="nav navbar-nav">
+                <li><a href="index">Home</a></li>
+                <li ><a href="prediction">Prediction</a></li>
+                <li class="active"><a href="about">About</a></li>
+              </ul>
+            </div>
+          </nav>
+          <h1 >Breast Cancer Prediction</h1>      
+          <p>Prediction over<b> 98%</b> accuracy.</p>
+          <p style="font-size: 1.2em;">
+            The dataset has been taken from UCI machine learning repository. The main objective of the analysis is to perform classification of tumors i.e., benign(B) or malignant(M). A benign tumor is a tumor that does not invade its surrounding tissue or spread around the body. A malignant tumor is a tumor that may invade its surrounding tissue or spread around the body. This dataset consists of 569 rows and 32 columns.
+          </p>
+          <p>
+            Data Source: <a href= "https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29">https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29</a>
+          </p>
+
+          <div class="row" style="margin:auto;">
+            <div class="col-sm-6" style="padding: auto">
+              <h2 style="text-align: center;">Benign Tumors</h2>
+              <p style="font-size: 1.2em;">
+                Since benign tumors are harmless, doctors may opt to leave the lump alone rather than remove it. If you are experiencing discomfort, irritation or pressure, let your doctor know so that she can plan to remove it for you and improve your comfort. 
+              </p>
+            </div>
+            <div class="col-sm-6" style="padding: auto">
+              <h2 style="text-align: center;">Malignant tumors</h2>
+              <p style="font-size: 1.2em;">
+                Malignant tumors are cancerous and aggressive because they invade and damage surrounding tissue. When a tumor is suspected to be malignant, the doctor will perform a biopsy to determine the severity or aggressiveness of the tumor.
+              </p>
+            </div>
+          </div>
+
+          <div class="container-fluid" style="margin-top: auto;padding: 15px;font-size: 1.3em;background-color: #ccddff">
+
+            <ul class="nav nav-tabs" style="background-color: #ccddff;padding: 15px">
+              <li ><a data-toggle="tab" href="#home" >What is Breast Cancer<br /> </a></li>
+              <li><a data-toggle="tab" href="#menu1">Who gets Breast Cancer</a></li>
+              <li><a data-toggle="tab" href="#menu2">What Are the Symptoms of Breast Cancer</a></li>
+            </ul>
+        
+            <div class="tab-content">
+              <div id="home" class="tab-pane fade">
+                <h3>What is Breast Cancer</h3>
+                <p>Cancers are typically named after the part of the body from which they originate. Breast cancer originates in the breast tissue. Like other cancers, breast cancer can invade and grow into the tissue surrounding the breast. It can also travel to other parts of the body and form new tumors, a process called metastasis..</p>
+              </div>
+              <div id="menu1" class="tab-pane fade">
+                <h3>Who gets Breast Cancer</h3>
+                <p>Breast cancer ranks second as a cause of cancer death in women (after lung cancer). Today, about 1 in 8 women (12%) will develop breast cancer in her lifetime. The American Cancer Society estimated that in 2017, about 252,710 women will be diagnosed with invasive breast cancer and about 40,610 will die from the disease.</p>
+              </div>
+              <div id="menu2" class="tab-pane fade">
+                <h3>Some Symptoms of Breast Cancer include:-</h3>
+                <p>
+                  <ul>
+                    <li>A mass or lump, which may feel as small as a pea.</li>
+                    <li>A change in the size, shape, or contour of the breast.</li>
+                    <li>A blood-stained or clear fluid discharge from the nipple.</li>
+                    <li>Redness of the skin on the breast or nipple.</li>
+                    <li>An area that is distinctly different from any other area on either breast.</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+         	
+            
+
+        </div> 
+
+
+</body>

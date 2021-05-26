@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Breast Cancer Prediction Using Machine Learning</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+</head>
+<style>
+ 
+.div-center {
+  width: 800px;
+  height: 1000px;
+  background-color:#5e6eb9;
+  position:all;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  padding: 1em 2em;
+  border-bottom: 2px solid #ccc;
+  display: table;
+  margin-top: 1cm;
+  
+}
+.back {
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+
+
+div.content {
+  display: table-cell;
+  vertical-align: middle;
+}
+</style>
+<body> 
+ 
+<div class="container-fluid" style="background-color: #9ab0ec" >
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Breast Cancer Prediction</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="index">Home</a></li>
+        <li class="active"><a href="prediction">Prediction</a></li>
+        <li><a href="about">About</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="jumbotron text-center"  style="background-color: #5b81e971;margin:auto" >
+    <h1 >Breast Cancer Prediction</h1>      
+          <p>Prediction over<b> 98%</b> accuracy.</p>
+    <body>
+      <div class="back">
+          <div class="div-center">
+            <div class="content">
+              <h3>Results</h3>
+
+<form action="/result" method="post">
+              <div class="jumbotron">
+                <h3>Cancer is Predicted to be {{data}}</h3>      
+                <p>The time taken to predict is {{time}} ms.</p>
+              </div>
+                  
+
+
+              <div class="row" style="margin:auto;">
+                <div class="col-sm-6" style="padding: auto">
+                  <h2 style="text-align: center;">Benign Tumors</h2>
+                  <p style="font-size: 1.2em;">
+                    Since benign tumors are harmless, doctors may opt to leave the lump alone rather than remove it. If you are experiencing discomfort, irritation or pressure, let your doctor know so that she can plan to remove it for you and improve your comfort. 
+                  </p>
+                </div>
+                <div class="col-sm-6" style="padding: auto">
+                  <h2 style="text-align: center;">Malignant tumors</h2>
+                  <p style="font-size: 1.2em;">
+                    Malignant tumors are cancerous and aggressive because they invade and damage surrounding tissue. When a tumor is suspected to be malignant, the doctor will perform a biopsy to determine the severity or aggressiveness of the tumor.
+                  </p>
+                </div>
+              </div>
+
+</form>
+              
+                    
+                 
+                
+            </div>
+          </div>	
+    </body>
+    </html>
+    <div class="well" style="margin: 40px; background-color: #ffffcc;text-align: center;">
+      Want to know about how we did or check accuracy, check it out <a href="github link">here</a>
+    </div>
+    
+  </div>   
+
+</div>
+
+</body>
+</html>
