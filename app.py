@@ -29,7 +29,7 @@ def title():
 
 @app.route('/')
 def main():
-    return render_template('prediction.html')
+    return render_template('index.html')
 
 @app.route('/prediction',methods=['POST','GET'])
 def home():
